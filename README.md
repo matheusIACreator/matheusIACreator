@@ -55,7 +55,7 @@ Sou estudante de **Engenharia Informática** no ISPGAYA, trabalhei como Web Deve
 ### 🤖 Galileu - RAG Chatbot System
 **AI/ML Engineering**
 
-Sistema de chatbot alimentado por LLM utilizando arquitetura RAG (Retrieval-Augmented Generation) para aplicações empresariais.
+Sistema de chatbot alimentado por LLM utilizando arquitetura RAG (Retrieval-Augmented Generation) para fins didáticos.
 
 **Tech Stack**: LangChain, ChromaDB, OpenAI API, Python, Vector Embeddings
 
