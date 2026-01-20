@@ -137,7 +137,7 @@ Aplicação de voz para Dungeons & Dragons utilizando modelos de linguagem da Hu
 *Vila Nova de Gaia, Portugal*
 
 - Desenvolvimento de aplicações full-stack com Next.js, React e TypeScript
-- Liderança no desenvolvimento do chatbot "Galileu" (RAG system)
+- Liderança no desenvolvimento de chatbots internos.
 - Criação de biblioteca de componentes internos (40% redução em tempo de dev)
 - Trabalho com cloud platforms (AWS, Azure, GCP)
 
