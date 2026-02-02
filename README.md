@@ -1,17 +1,17 @@
-# 👋 Olá, eu sou Matheus!
+# 👋 Hello, I'm Matheus!
 
-## 🚀 Sobre Mim
+## 🚀 About Me
 
-Sou estudante de **Engenharia Informática** no ISPGAYA, trabalhei como Web Developer por mais de um ano e atualmente estou fazendo a transição para **AI/ML Engineering**, combinando minha experiência em desenvolvimento full-stack com conhecimentos avançados em sistemas de IA.
+I'm an **Information Engineering** student at ISPGAYA, worked as a Web Developer for over a year, and I'm currently transitioning to **AI/ML Engineering**, combining my full-stack development experience with advanced AI systems knowledge.
 
-💼 **Desenvolvedor Full-Stack** com foco em aplicações web modernas  
-🤖 **AI/ML Enthusiast** especializado em RAG systems e LLMs  
-🎓 **Self Learner** com +170h de treinamento em AI/ML  
-🌍 **Trilíngue**: Português (nativo), Inglês (avançado), Espanhol (intermediário)
+💼 **Full-Stack Developer** focused on modern web applications  
+🤖 **AI/ML Enthusiast** specialized in RAG systems and LLMs  
+🎓 **Self Learner** with +170h of AI/ML training  
+🌍 **Trilingual**: Portuguese (native), English (advanced), Spanish (intermediate)
 
 ---
 
-## 💻 Stack Tecnológica
+## 💻 Tech Stack
 
 ### Frontend Development
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -50,59 +50,59 @@ Sou estudante de **Engenharia Informática** no ISPGAYA, trabalhei como Web Deve
 
 ---
 
-## 🎯 Projetos em Destaque
+## 🎯 Featured Projects
 
 ### 🤖 Galileu - RAG Chatbot System
 **AI/ML Engineering**
 
-Sistema de chatbot alimentado por LLM utilizando arquitetura RAG (Retrieval-Augmented Generation) para fins didáticos.
+LLM-powered chatbot system using RAG (Retrieval-Augmented Generation) architecture for educational purposes.
 
 **Tech Stack**: LangChain, ChromaDB, OpenAI API, Python, Vector Embeddings
 
 **Features**:
-- Sistema RAG completo para recuperação e geração de respostas contextuais
-- Integração com ChromaDB para armazenamento eficiente de embeddings vetoriais
-- Pipeline de processamento de documentos e indexação semântica
-- API RESTful para integração com aplicações front-end
+- Complete RAG system for contextual response retrieval and generation
+- ChromaDB integration for efficient vector embedding storage
+- Document processing and semantic indexing pipeline
+- RESTful API for front-end application integration
 
 ---
 
-### 📚 Biblioteca de Componentes Internos
+### 📚 Internal Component Library
 **Frontend Engineering** | *Crunch Equation*
 
-Sistema de componentes reutilizáveis que reduziu o tempo de desenvolvimento em 40%.
+Reusable component system that reduced development time by 40%.
 
 **Tech Stack**: React, TypeScript, TailwindCSS, Storybook
 
-**Impacto**:
-- Redução de 40% no tempo de desenvolvimento
-- Padronização de UI/UX em todos os projetos
-- Documentação completa com Storybook
+**Impact**:
+- 40% reduction in development time
+- UI/UX standardization across all projects
+- Complete documentation with Storybook
 
 ---
 
-### 🏥 Classificador de Asma com Lógica Fuzzy
-**Machine Learning** | *Projeto Acadêmico*
+### 🏥 Asthma Classifier with Fuzzy Logic
+**Machine Learning** | *Academic Project*
 
-Sistema de diagnóstico médico utilizando lógica fuzzy para classificação de severidade de asma.
+Medical diagnosis system using fuzzy logic for asthma severity classification.
 
 **Tech Stack**: Python, Fuzzy Logic, scikit-learn
 
 ---
 
-### 📈 Preditor de Ações com LSTM
-**Deep Learning** | *Projeto Pessoal*
+### 📈 Stock Predictor with LSTM
+**Deep Learning** | *Personal Project*
 
-Modelo de previsão de preços de ações usando redes neurais LSTM.
+Stock price prediction model using LSTM neural networks.
 
 **Tech Stack**: Python, TensorFlow, LSTM, Pandas, NumPy
 
 ---
 
 ### 🎲 D&D Voice Application
-**AI/NLP** | *Projeto Pessoal*
+**AI/NLP** | *Personal Project*
 
-Aplicação de voz para Dungeons & Dragons utilizando modelos de linguagem da Hugging Face.
+Voice application for Dungeons & Dragons using Hugging Face language models.
 
 **Tech Stack**: Python, Hugging Face Transformers, Speech Recognition
 
@@ -116,13 +116,13 @@ Aplicação de voz para Dungeons & Dragons utilizando modelos de linguagem da Hu
 
 ---
 
-## 🎓 Formação & Certificações
+## 🎓 Education & Certifications
 
-**🎓 Bacharelado em Engenharia Informática** - ISPGAYA *(em andamento)*
+**🎓 Bachelor's in Information Engineering** - ISPGAYA *(in progress)*
 
-**🎓 42 Porto Coding Bootcamp** - Concluído
+**🎓 42 Porto Coding Bootcamp** - Completed
 
-**📜 Certificações AI/ML** (+170 horas):
+**📜 AI/ML Certifications** (+170 hours):
 - Generative AI and LLMs
 - RAG Systems Architecture
 - Multi-Agent Systems
@@ -131,28 +131,28 @@ Aplicação de voz para Dungeons & Dragons utilizando modelos de linguagem da Hu
 
 ---
 
-## 🌟 Experiência Profissional
+## 🌟 Professional Experience
 
 **Junior Web Developer** @ Crunch Equation  
 *Vila Nova de Gaia, Portugal*
 
-- Desenvolvimento de aplicações full-stack com Next.js, React e TypeScript
-- Liderança no desenvolvimento de chatbots internos.
-- Criação de biblioteca de componentes internos (40% redução em tempo de dev)
-- Trabalho com cloud platforms (AWS, Azure, GCP)
+- Full-stack application development with Next.js, React, and TypeScript
+- Leadership in internal chatbot development
+- Creation of internal component library (40% reduction in dev time)
+- Work with cloud platforms (AWS, Azure, GCP)
 
 ---
 
-## 🎯 Objetivos Atuais
+## 🎯 Current Goals
 
-🔍 **Buscando oportunidades** em AI/ML Engineering na Europa  
-🚀 **Construindo** projetos práticos de Machine Learning  
-📚 **Aprendendo** sobre Multi-Agent Systems e LLM Fine-tuning  
-🌱 **Contribuindo** para projetos open-source de AI/ML
+🔍 **Seeking opportunities** in AI/ML Engineering across Europe  
+🚀 **Building** practical Machine Learning projects  
+📚 **Learning** about Multi-Agent Systems and LLM Fine-tuning  
+🌱 **Contributing** to open-source AI/ML projects
 
 ---
 
-## 📫 Contato
+## 📫 Contact
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matheus-masago/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:matheus.masago@hotmail.com)
