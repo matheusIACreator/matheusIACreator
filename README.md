@@ -2,39 +2,17 @@
 
 ## 🚀 About Me
 
-Hi! I’m Matheus, a Junior AI / Machine Learning Engineer with a strong background in full-stack web development and a growing focus on building real, end-to-end AI systems.
+I’m Matheus, a Junior AI / ML Engineer focused on building production-ready LLM applications and end-to-end AI systems.
 
-I started my career in web development (Next.js, React, Node.js, TypeScript, Android with Kotlin/Java), which gives me a product-oriented mindset and the ability to turn models into usable applications — not just notebooks.
+I come from a full-stack background (Next.js, React, TypeScript), which lets me turn models into real products — not just notebooks.
 
-Recently, I’ve been working hands-on with Machine Learning and LLM-based systems, building projects such as:
+I’ve built projects around RAG systems, LLM-powered chatbots, AI-driven TTS, and time-series forecasting, using tools like PyTorch, LangChain, ChromaDB, and FastAPI.
 
-• 🎙️ D&D Voicer — an AI-powered text-to-speech system using the Kokoro-82M model to generate realistic character voices and narrations for immersive tabletop RPG sessions.
-• 🔭 RAG Chatbot – Galileu Galilei — a document-grounded Q&A system using Retrieval-Augmented Generation with LangChain, ChromaDB, and Llama-3.1-8B, featuring conversational memory and a web interface built with Gradio.
-• 📈 LSTM Stock Price Prediction — a time-series forecasting model using historical Google stock data, with custom preprocessing, sliding-window sequence generation, dropout regularization, and result visualization.
-
-My main interests are LLMs, NLP, RAG architectures, and ML-powered applications, especially where AI meets real user interfaces.
-
-I’m currently looking for opportunities as a Junior Machine Learning Engineer / AI Engineer, where I can contribute to real products, ship models into production, and keep learning fast alongside experienced teams.
-
-If you’re building AI systems and need someone who can code, experiment, and deliver — let’s talk.
+I’m currently seeking opportunities where I can ship AI features, learn fast, and work on real-world ML systems.
 
 ---
 
 ## 💻 Tech Stack
-
-### Frontend Development
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-
-### Backend Development
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-
 
 ### AI/ML & Data Science
 ![LangChain](https://img.shields.io/badge/LangChain-121212?style=for-the-badge&logo=chainlink&logoColor=white)
@@ -45,10 +23,17 @@ If you’re building AI systems and need someone who can code, experiment, and d
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 
+
+### Backend Development
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+
 ### Databases & Vector Stores
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge&logo=database&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+
 
 ### Cloud & DevOps
 ![AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
@@ -56,6 +41,17 @@ If you’re building AI systems and need someone who can code, experiment, and d
 ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+
+### Frontend Development
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
 
 ---
 
@@ -104,7 +100,7 @@ Medical diagnosis system using fuzzy logic for asthma severity classification.
 
 Stock price prediction model using LSTM neural networks.
 
-**Tech Stack**: Python, TensorFlow, LSTM, Pandas, NumPy
+**Tech Stack**: Python, PyTorch, LSTM, Pandas, NumPy
 
 ---
 
