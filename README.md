@@ -2,12 +2,21 @@
 
 ## 🚀 About Me
 
-I'm an **Information Engineering** student at ISPGAYA, worked as a Web Developer for over a year, and I'm currently transitioning to **AI/ML Engineering**, combining my full-stack development experience with advanced AI systems knowledge.
+Hi! I’m Matheus, a Junior AI / Machine Learning Engineer with a strong background in full-stack web development and a growing focus on building real, end-to-end AI systems.
 
-💼 **Full-Stack Developer** focused on modern web applications  
-🤖 **AI/ML Enthusiast** specialized in RAG systems and LLMs  
-🎓 **Self Learner** with +170h of AI/ML training  
-🌍 **Trilingual**: Portuguese (native), English (advanced), Spanish (intermediate)
+I started my career in web development (Next.js, React, Node.js, TypeScript, Android with Kotlin/Java), which gives me a product-oriented mindset and the ability to turn models into usable applications — not just notebooks.
+
+Recently, I’ve been working hands-on with Machine Learning and LLM-based systems, building projects such as:
+
+• 🎙️ D&D Voicer — an AI-powered text-to-speech system using the Kokoro-82M model to generate realistic character voices and narrations for immersive tabletop RPG sessions.
+• 🔭 RAG Chatbot – Galileu Galilei — a document-grounded Q&A system using Retrieval-Augmented Generation with LangChain, ChromaDB, and Llama-3.1-8B, featuring conversational memory and a web interface built with Gradio.
+• 📈 LSTM Stock Price Prediction — a time-series forecasting model using historical Google stock data, with custom preprocessing, sliding-window sequence generation, dropout regularization, and result visualization.
+
+My main interests are LLMs, NLP, RAG architectures, and ML-powered applications, especially where AI meets real user interfaces.
+
+I’m currently looking for opportunities as a Junior Machine Learning Engineer / AI Engineer, where I can contribute to real products, ship models into production, and keep learning fast alongside experienced teams.
+
+If you’re building AI systems and need someone who can code, experiment, and deliver — let’s talk.
 
 ---
 
