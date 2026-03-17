@@ -62,7 +62,7 @@ I’m currently seeking opportunities where I can ship AI features, learn fast, 
 
 LLM-powered chatbot system using RAG (Retrieval-Augmented Generation) architecture for educational purposes.
 
-**Tech Stack**: LangChain, ChromaDB, OpenAI API, Python, Vector Embeddings
+**Tech Stack**: LangChain, ChromaDB, Llama 3.2, Python, Vector Embeddings
 
 **Features**:
 - Complete RAG system for contextual response retrieval and generation
