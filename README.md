@@ -2,13 +2,13 @@
 
 ## 🚀 About Me
 
-I’m Matheus, a Junior AI / ML Engineer focused on building production-ready LLM applications and end-to-end AI systems.
+I'm Matheus, a Junior AI / ML Engineer focused on building production-ready LLM applications and end-to-end AI systems.
 
 I come from a full-stack background (Next.js, React, TypeScript), which lets me turn models into real products — not just notebooks.
 
-I’ve built projects around RAG systems, LLM-powered chatbots, AI-driven TTS, and time-series forecasting, using tools like PyTorch, LangChain, ChromaDB, and FastAPI.
+I've built projects around RAG systems, LLM-powered chatbots, AI-driven TTS, and time-series forecasting, using tools like PyTorch, LangChain, ChromaDB, and FastAPI.
 
-I’m currently seeking opportunities where I can ship AI features, learn fast, and work on real-world ML systems.
+I'm currently seeking opportunities where I can ship AI features, learn fast, and work on real-world ML systems.
 
 ---
 
@@ -86,30 +86,42 @@ Reusable component system that reduced development time by 40%.
 
 ---
 
+### 📉 Churn Risk Detector
+**Machine Learning** | *Personal Project*
+
+Customer churn prediction system with explainability features for business decision-making.
+
+**Tech Stack**: Python, XGBoost, SHAP, Scikit-learn, Streamlit
+
+**Features**:
+- XGBoost classification model for churn risk scoring
+- SHAP integration for model interpretability and feature importance
+- Interactive dashboard deployed on Streamlit Community Cloud
+- End-to-end pipeline from data preprocessing to prediction
+
+---
+
+### 💸 Expense Categorization Classifier
+**Machine Learning / NLP** | *Personal Project*
+
+Automated expense categorization system using NLP techniques, with a production-ready API.
+
+**Tech Stack**: Python, TF-IDF, Logistic Regression, FastAPI, Streamlit
+
+**Features**:
+- TF-IDF vectorization pipeline for text feature extraction
+- Logistic Regression classifier for multi-class categorization
+- RESTful API built with FastAPI for seamless integration
+- Streamlit frontend for interactive testing and visualization
+
+---
+
 ### 🏥 Asthma Classifier with Fuzzy Logic
 **Machine Learning** | *Academic Project*
 
 Medical diagnosis system using fuzzy logic for asthma severity classification.
 
 **Tech Stack**: Python, Fuzzy Logic, scikit-learn
-
----
-
-### 📈 Stock Predictor with LSTM
-**Deep Learning** | *Personal Project*
-
-Stock price prediction model using LSTM neural networks.
-
-**Tech Stack**: Python, PyTorch, LSTM, Pandas, NumPy
-
----
-
-### 🎲 D&D Voice Application
-**AI/NLP** | *Personal Project*
-
-Voice application for Dungeons & Dragons using Hugging Face language models.
-
-**Tech Stack**: Python, Hugging Face Transformers, Speech Recognition
 
 ---
 
