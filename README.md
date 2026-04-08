@@ -6,7 +6,7 @@ I'm Matheus, a Junior AI / ML Engineer focused on building production-ready LLM 
 
 I come from a full-stack background (Next.js, React, TypeScript), which lets me turn models into real products — not just notebooks.
 
-I've built projects around RAG systems, LLM-powered chatbots, AI-driven TTS, and time-series forecasting, using tools like PyTorch, LangChain, ChromaDB, and FastAPI.
+I've built projects around RAG systems, agentic AI, LLM fine-tuning, AI-driven TTS, and time-series forecasting, using tools like Pydantic AI, PyTorch, LangChain, ChromaDB, and FastAPI.
 
 I'm currently seeking opportunities where I can ship AI features, learn fast, and work on real-world ML systems.
 
@@ -15,6 +15,7 @@ I'm currently seeking opportunities where I can ship AI features, learn fast, an
 ## 💻 Tech Stack
 
 ### AI/ML & Data Science
+![Pydantic AI](https://img.shields.io/badge/Pydantic_AI-E92063?style=for-the-badge&logo=python&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-121212?style=for-the-badge&logo=chainlink&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
@@ -23,17 +24,15 @@ I'm currently seeking opportunities where I can ship AI features, learn fast, an
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 
-
 ### Backend Development
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-
 
 ### Databases & Vector Stores
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge&logo=database&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-
 
 ### Cloud & DevOps
 ![AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
@@ -41,7 +40,6 @@ I'm currently seeking opportunities where I can ship AI features, learn fast, an
 ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
 
 ### Frontend Development
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -52,37 +50,51 @@ I'm currently seeking opportunities where I can ship AI features, learn fast, an
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-
 ---
 
 ## 🎯 Featured Projects
 
-### 🤖 Galileu - RAG Chatbot System
-**AI/ML Engineering**
+### 🤖 DevAssist — CLI AI Agent for Developer Productivity
+**Agentic AI Engineering** | *Personal Project*
 
-LLM-powered chatbot system using RAG (Retrieval-Augmented Generation) architecture for educational purposes.
+Production-grade CLI AI agent built with Pydantic AI, featuring dual MCP server integration, async tool calling, and real-time web scraping.
 
-**Tech Stack**: LangChain, ChromaDB, Llama 3.2, Python, Vector Embeddings
+**Tech Stack**: Pydantic AI, FastMCP, Firecrawl MCP, httpx, Rich, OpenAI, Python 3.12+
 
 **Features**:
-- Complete RAG system for contextual response retrieval and generation
-- ChromaDB integration for efficient vector embedding storage
-- Document processing and semantic indexing pipeline
-- RESTful API for front-end application integration
+- Dual MCP integration — custom FastMCP server + Firecrawl for full page web scraping
+- Async tool calling with dependency injection via `RunContext` (httpx.AsyncClient in AgentDeps)
+- GitHub search, local file reading, math calculator, and developer utilities
+- Rich CLI with conversation memory and streaming responses
+- Both MCP servers managed automatically as stdio subprocesses
 
 ---
 
-### 📚 Internal Component Library
-**Frontend Engineering** | *Crunch Equation*
+### 🧠 Finance Phi-3 — QLoRA Fine-tuning
+**LLM Fine-tuning** | *Personal Project*
 
-Reusable component system that reduced development time by 40%.
+QLoRA fine-tune of Microsoft's Phi-3-mini-4k-instruct on financial Q&A data, with ROUGE-L improvement of +129%.
 
-**Tech Stack**: React, TypeScript, TailwindCSS, Storybook
+**Tech Stack**: PyTorch, Hugging Face PEFT, QLoRA, W&B, Gradio, Phi-3
 
-**Impact**:
-- 40% reduction in development time
-- UI/UX standardization across all projects
-- Complete documentation with Storybook
+**Results**:
+- ROUGE-L: 0.218 → 0.499 (+129%)
+- W&B experiment tracking and full training logs
+- Gradio demo deployed on Hugging Face Spaces
+
+---
+
+### 🤖 Galileu — RAG Chatbot System
+**AI/ML Engineering** | *Personal Project*
+
+LLM-powered chatbot using RAG architecture with near-perfect retrieval metrics.
+
+**Tech Stack**: LangChain, ChromaDB, Llama 3.2, FastAPI, Python
+
+**Results**:
+- MRR = 1.0, NDCG@8 ≈ 0.91
+- 349 indexed chunks with semantic search pipeline
+- RESTful API for front-end integration
 
 ---
 
@@ -93,26 +105,35 @@ Customer churn prediction system with explainability features for business decis
 
 **Tech Stack**: Python, XGBoost, SHAP, Scikit-learn, Streamlit
 
-**Features**:
-- XGBoost classification model for churn risk scoring
-- SHAP integration for model interpretability and feature importance
-- Interactive dashboard deployed on Streamlit Community Cloud
-- End-to-end pipeline from data preprocessing to prediction
+**Results**:
+- ROC-AUC: 0.8446, Recall: 82%
+- SHAP integration for model interpretability
+- Deployed on Streamlit Community Cloud
 
 ---
 
 ### 💸 Expense Categorization Classifier
 **Machine Learning / NLP** | *Personal Project*
 
-Automated expense categorization system using NLP techniques, with a production-ready API.
+Automated expense categorization system using NLP techniques with a production-ready API.
 
 **Tech Stack**: Python, TF-IDF, Logistic Regression, FastAPI, Streamlit
 
-**Features**:
-- TF-IDF vectorization pipeline for text feature extraction
-- Logistic Regression classifier for multi-class categorization
-- RESTful API built with FastAPI for seamless integration
-- Streamlit frontend for interactive testing and visualization
+**Results**:
+- F1 Score: 0.83
+- RESTful API with FastAPI
+- Streamlit frontend for interactive testing
+
+---
+
+### 📚 Internal Component Library
+**Frontend Engineering** | *Crunch Equation*
+
+Reusable component system that reduced development time by 40%.
+
+**Tech Stack**: React, TypeScript, TailwindCSS, Storybook
+
+**Impact**: 40% reduction in development time across all projects.
 
 ---
 
@@ -135,9 +156,9 @@ Medical diagnosis system using fuzzy logic for asthma severity classification.
 
 ## 🎓 Education & Certifications
 
-**🎓 Bachelor's in Information Engineering** - ISPGAYA *(in progress)*
+**🎓 Bachelor's in Information Engineering** — ISPGAYA *(in progress)*
 
-**🎓 42 Porto Coding Bootcamp** - Completed
+**🎓 42 Porto Coding Bootcamp** — Completed
 
 **📜 AI/ML Certifications** (+170 hours):
 - Generative AI and LLMs
@@ -150,7 +171,7 @@ Medical diagnosis system using fuzzy logic for asthma severity classification.
 
 ## 🌟 Professional Experience
 
-**Junior Web Developer** @ Crunch Equation  
+**Junior Web Developer** @ Crunch Equation
 *Vila Nova de Gaia, Portugal*
 
 - Full-stack application development with Next.js, React, and TypeScript
@@ -162,9 +183,9 @@ Medical diagnosis system using fuzzy logic for asthma severity classification.
 
 ## 🎯 Current Goals
 
-🔍 **Seeking opportunities** in AI/ML Engineering across Europe  
-🚀 **Building** practical Machine Learning projects  
-📚 **Learning** about Multi-Agent Systems and LLM Fine-tuning  
+🔍 **Seeking opportunities** in AI/ML Engineering across Europe
+🚀 **Building** agentic AI systems and production-ready LLM applications
+📚 **Learning** MCP protocol, Pydantic AI, and LLM fine-tuning workflows
 🌱 **Contributing** to open-source AI/ML projects
 
 ---
