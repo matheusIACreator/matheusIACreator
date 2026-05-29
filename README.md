@@ -126,17 +126,6 @@ Automated expense categorization system using NLP techniques with a production-r
 
 ---
 
-### 📚 Internal Component Library
-**Frontend Engineering** | *Crunch Equation*
-
-Reusable component system that reduced development time by 40%.
-
-**Tech Stack**: React, TypeScript, TailwindCSS, Storybook
-
-**Impact**: 40% reduction in development time across all projects.
-
----
-
 ### 🏥 Asthma Classifier with Fuzzy Logic
 **Machine Learning** | *Academic Project*
 
@@ -176,7 +165,6 @@ Medical diagnosis system using fuzzy logic for asthma severity classification.
 
 - Full-stack application development with Next.js, React, and TypeScript
 - Leadership in internal chatbot development
-- Creation of internal component library (40% reduction in dev time)
 - Work with cloud platforms (AWS, Azure, GCP)
 
 ---
