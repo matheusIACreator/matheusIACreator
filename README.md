@@ -4,7 +4,7 @@
 
 Today I run a multilingual GenAI chatbot in production at Living Tours, from architecture to deployment. My full-stack background (Next.js, React, TypeScript) means I can take a model all the way to a product people actually use.
 
-**What I work on:** RAG · Agentic AI & MCP · LLM evaluation & guardrails · LLM fine-tuning · MLOps
+**What I work on:** RAG · Agentic AI · Voice AI · LLM evaluation & guardrails · LLM fine-tuning · MLOps
 
 📍 **Open to AI/ML Engineer roles:** hybrid in Porto or remote.
 
@@ -17,7 +17,7 @@ Today I run a multilingual GenAI chatbot in production at Living Tours, from arc
 
 I own the full lifecycle of the Living Cruise GenAI chatbot, running in production in four languages (PT/EN/ES/FR).
 
-- **Architecture:** led the migration from AWS Lambda + Groq to Cloudflare Workers, Containers and Workers AI, with a FastAPI (Python 3.13) and PostgreSQL backend
+- **Architecture:** led the migration from AWS Lambda + Groq to Cloudflare Workers, Containers and Workers AI, with a FastAPI (Python 3.13) and PostgreSQL backend, shipped with Docker and Wrangler
 - **Reliability:** grew a property-based regression eval suite from 9 to 20 test cases, fixing hallucination and off-topic failures
 - **Security:** built a three-layer prompt injection defense and PII masking, including in Langfuse traces
 - **Compliance:** implemented EU AI Act Article 50 transparency requirements
@@ -36,48 +36,60 @@ I own the full lifecycle of the Living Cruise GenAI chatbot, running in producti
 ## 🎯 Featured Projects
 
 ### 🏨 hotelml: End-to-End MLOps Platform
-**MLOps / LLMOps** | *Personal Project* | 🚧 *In active development*
+**MLOps** | *Personal Project* | 🚧 *In active development*
+
+[**Live demo**](https://hotelml.vercel.app) · [**Repository**](https://github.com/matheusIACreator/Hotel-Demand)
 
 A reference platform for the full ML production lifecycle, using hotel booking cancellation prediction as the use case. The focus is on operating a model safely, not just training one.
 
-**Tech Stack**: Python, scikit-learn, MLflow, GitHub Actions, pytest, mypy, ruff
+**Tech Stack**: Python, scikit-learn, MLflow, FastAPI, Docker, Terraform, Azure Container Apps, GitHub Actions, PySpark, Next.js
 
-**Built so far**:
-- **Safe releases:** champion/challenger model registry with conditional promotion, plus rollback that needs no rebuild or redeploy
+**Results** (temporal test set of 23,842 bookings, from a dataset of 119,390 rows):
+- **ROC-AUC 0.861 · PR-AUC 0.823 · F1 0.694 · Brier 0.157**
+- 43 core tests with 94.8% coverage, plus 20 Spark integration tests
+
+**Highlights**:
+- **Safe releases:** champion/challenger registry with conditional promotion and a tested rollback flow
 - **Trustworthy evaluation:** temporal train/test split, with leakage columns removed and a test guarding against their return
-- **Serving-ready models:** feature engineering lives inside the registered pipeline, so the model accepts raw request payloads
-- **Data contracts:** schema validation that fails early and reports every problem at once
-- **Secure deserialization:** an explicit skops allowlist instead of disabling MLflow's safety check
-- **Engineering quality:** CI with lint, type checks and an 80% coverage gate (25 tests, 96% coverage), plus Architecture Decision Records
+- **Cloud deployment:** FastAPI on Azure Container Apps, provisioned with Terraform, scaling to zero, with budget alerts
+- **Secure CD:** GitHub Actions with OIDC, images pinned by digest and smoke tests against the published endpoint
+- **Batch pipelines:** PySpark feature engineering and batch scoring, with tests proving parity against the scikit-learn pipeline
+- **Monitoring:** privacy-preserving API telemetry, Terraform-managed alerts (5xx errors, P95 latency, model load failures) and offline drift detection
+- **Documentation:** Architecture Decision Records and operational runbooks
 
 **Roadmap**:
 
 | Phase | Scope | Status |
 |---|---|---|
 | 1 | Packaging, tests, CI, MLflow training, model registry | ✅ Done |
-| 2 | FastAPI + Docker, Terraform on Azure, CD | Planned |
-| 3 | Feature pipeline and batch scoring with PySpark | Planned |
-| 4 | Drift and quality monitoring, alerts, SLOs, runbooks, automated retraining | Planned |
+| 2 | FastAPI + Docker, Terraform on Azure, CD | ✅ Done |
+| 3 | Feature pipeline and batch scoring with PySpark | ✅ Validated locally |
+| 4 | Telemetry, alerts, drift detection, rollback drills, SLOs, automated retraining | 🚧 In progress |
 | 5 | LLMOps with the Anthropic API: tracing, evals, versioned prompts, guardrails, cost control | Planned |
 | 6 | Simulated post-mortem, reusable template, architecture diagram | Planned |
 
 ---
 
 ### 🎙️ Jarvis: Personal Voice Assistant
-**Voice AI / Agentic AI** | *Personal Project* | 🚧 *In active development*
+**Voice AI / Agentic AI** | *Personal Project* | 🚧 *Working MVP, in active development*
 
-An Iron Man-style voice assistant: a double clap wakes it up, it listens, reasons, uses tools and answers out loud. It is designed around the real constraints of voice agents: latency, cost and safe actions.
+[**Repository**](https://github.com/matheusIACreator/jarvis-ai)
 
-**Tech Stack**: Python, Anthropic API, MCP, faster-whisper, ElevenLabs, Telegram Bot API
+An Iron Man-style voice assistant that runs on my laptop: a double clap or "Hey Jarvis" wakes it up, and it listens, reasons, uses tools and answers out loud. It is designed around the real constraints of voice agents: latency, cost and safe actions.
 
-**Design highlights**:
-- **Custom agent core** on the Anthropic SDK, with tools exposed through MCP servers so the model and the tools can change independently
-- **Low-latency pipeline:** local speech-to-text with faster-whisper and streaming text-to-speech with ElevenLabs Flash
-- **Cost-aware model routing:** Claude Haiku by default for the voice loop, Claude Sonnet only for tasks that need deeper reasoning
-- **Human in the loop:** Jarvis drafts emails, but nothing is sent until I confirm by voice
-- **Multi-agent development:** Claude Code and Codex share project memory through a versioned Markdown vault, with one `AGENTS.md` as the source of truth
+**Tech Stack**: Python, Anthropic API, faster-whisper, ElevenLabs, Telegram Bot API, Next.js, React
 
-**Planned MVP flow**: clap detection → startup audio → greeting → voice command → spoken response, followed by Telegram notifications and Gmail.
+**Pipeline**: clap or wake word → local speech-to-text → Claude with tool calling → streaming text-to-speech
+
+**Highlights**:
+- **Cost-aware model routing:** Claude Haiku by default, Claude Sonnet on demand
+- **Human in the loop:** outgoing messages are read back and sent only after an explicit "yes", and the confirmation expires after 60 seconds
+- **Background tasks:** longer analyses run while the conversation continues, and the result arrives on Telegram
+- **Long-term memory:** voice, Telegram and web exchanges are saved as local Markdown and searchable by the agent, with no embeddings or cloud memory service
+- **Local dashboard:** Next.js interface with live assistant status and text chat
+- **Multi-agent development:** Claude Code and Codex share project memory through a versioned Obsidian vault, with automatic fallback between them
+
+**Next**: email and phone calls, always behind explicit user confirmation.
 
 ---
 
@@ -154,6 +166,8 @@ Asthma severity classification using fuzzy logic.
 ![Weights & Biases](https://img.shields.io/badge/Weights_%26_Biases-FFBE00?style=for-the-badge&logo=weightsandbiases&logoColor=black)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
+![Apache Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 ### Backend & Data Stores
@@ -184,14 +198,6 @@ Asthma severity classification using fuzzy logic.
 - **42 Porto**, systems programming bootcamp *(completed)*
 - **CESAE Digital**, Web & Mobile technician diploma
 - **AI/ML certifications (170+ hours):** Generative AI and LLMs, RAG Systems Architecture, Multi-Agent Systems, Cloud Deployment for ML Models, LangChain Development
-
----
-
-## 📊 GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=matheusIACreator&show_icons=true&theme=tokyonight)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=matheusIACreator&layout=compact&theme=tokyonight)
 
 ---
 
