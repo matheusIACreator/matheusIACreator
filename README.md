@@ -4,7 +4,7 @@
 
 Today I run a multilingual GenAI chatbot in production at Living Tours, from architecture to deployment. My full-stack background (Next.js, React, TypeScript) means I can take a model all the way to a product people actually use.
 
-**What I work on:** RAG · Agentic AI · Voice AI · LLM evaluation & guardrails · LLM fine-tuning · MLOps
+**What I work on:** RAG · Agentic AI · LLM evaluation & guardrails · LLM fine-tuning · MLOps
 
 📍 **Open to AI/ML Engineer roles:** hybrid in Porto or remote.
 
