@@ -13,7 +13,7 @@ Today I run a multilingual GenAI chatbot in production at Living Tours, from arc
 ## 🌟 Professional Experience
 
 ### AI & Web Developer @ Living Tours
-*Porto, Portugal · May 2025 – Present*
+*Porto, Portugal · May 2026 – Present*
 
 I own the full lifecycle of the Living Cruise GenAI chatbot, running in production in four languages (PT/EN/ES/FR).
 
@@ -35,112 +35,98 @@ I own the full lifecycle of the Living Cruise GenAI chatbot, running in producti
 
 ## 🎯 Featured Projects
 
+Four projects that bring together my work in ML systems, voice agents, cloud delivery and retrieval.
+
 ### 🏨 hotelml: End-to-End MLOps Platform
-**MLOps** | *Personal Project* | 🚧 *In active development*
+
+**MLOps · Predictive ML** | *Personal project · In active development*
 
 [**Live demo**](https://hotelml.vercel.app) · [**Repository**](https://github.com/matheusIACreator/Hotel-Demand)
 
-A reference platform for the full ML production lifecycle, using hotel booking cancellation prediction as the use case. The focus is on operating a model safely, not just training one.
+A platform for hotel booking cancellation prediction that covers reproducible training, model management, serving and operational tooling.
 
-**Tech Stack**: Python, scikit-learn, MLflow, FastAPI, Docker, Terraform, Azure Container Apps, GitHub Actions, PySpark, Next.js
+**Stack:** Python, scikit-learn, MLflow, FastAPI, Docker, Terraform, Azure Container Apps, GitHub Actions, PySpark, Next.js
 
-**Results** (temporal test set of 23,842 bookings, from a dataset of 119,390 rows):
-- **ROC-AUC 0.861 · PR-AUC 0.823 · F1 0.694 · Brier 0.157**
-- 43 core tests with 94.8% coverage, plus 20 Spark integration tests
+- **Evaluation:** ROC-AUC **0.8614**, PR-AUC **0.8234** and F1 **0.6936** on a temporal test set of **23,842 bookings**, from 119,390 raw rows. These are offline evaluation results, not production traffic metrics.
+- **Model lifecycle:** MLflow tracking, champion/challenger registry, conditional promotion, exported model bundles and rollback.
+- **Deployment:** containerized FastAPI on Azure Container Apps, Terraform infrastructure and GitHub Actions CD with OIDC, images pinned by digest and post-deploy smoke tests.
+- **Data pipelines:** PySpark feature engineering and batch scoring validated locally, with parity checks against the scikit-learn pipeline.
+- **Operations:** structured telemetry, configurable Azure alerts, drift and model-quality tooling, plus architecture decisions and runbooks.
 
-**Highlights**:
-- **Safe releases:** champion/challenger registry with conditional promotion and a tested rollback flow
-- **Trustworthy evaluation:** temporal train/test split, with leakage columns removed and a test guarding against their return
-- **Cloud deployment:** FastAPI on Azure Container Apps, provisioned with Terraform, scaling to zero, with budget alerts
-- **Secure CD:** GitHub Actions with OIDC, images pinned by digest and smoke tests against the published endpoint
-- **Batch pipelines:** PySpark feature engineering and batch scoring, with tests proving parity against the scikit-learn pipeline
-- **Monitoring:** privacy-preserving API telemetry, Terraform-managed alerts (5xx errors, P95 latency, model load failures) and offline drift detection
-- **Documentation:** Architecture Decision Records and operational runbooks
-
-**Roadmap**:
-
-| Phase | Scope | Status |
-|---|---|---|
-| 1 | Packaging, tests, CI, MLflow training, model registry | ✅ Done |
-| 2 | FastAPI + Docker, Terraform on Azure, CD | ✅ Done |
-| 3 | Feature pipeline and batch scoring with PySpark | ✅ Validated locally |
-| 4 | Telemetry, alerts, drift detection, rollback drills, SLOs, automated retraining | 🚧 In progress |
-| 5 | LLMOps with the Anthropic API: tracing, evals, versioned prompts, guardrails, cost control | Planned |
-| 6 | Simulated post-mortem, reusable template, architecture diagram | Planned |
+**Current scope:** API and frontend published; Spark pipelines validated locally. Monitoring and retraining tools are implemented, while operational rollout still depends on approved targets, pilot completion and a real source of booking outcomes. LLMOps remains planned.
 
 ---
 
 ### 🎙️ Jarvis: Personal Voice Assistant
-**Voice AI / Agentic AI** | *Personal Project* | 🚧 *Working MVP, in active development*
+
+**Voice AI · Agentic AI** | *Personal project · Working MVP*
 
 [**Repository**](https://github.com/matheusIACreator/jarvis-ai)
 
-An Iron Man-style voice assistant that runs on my laptop: a double clap or "Hey Jarvis" wakes it up, and it listens, reasons, uses tools and answers out loud. It is designed around the real constraints of voice agents: latency, cost and safe actions.
+A Windows voice assistant that combines local speech recognition, Claude tool calling and streaming speech synthesis, with Telegram and a local web dashboard.
 
-**Tech Stack**: Python, Anthropic API, faster-whisper, ElevenLabs, Telegram Bot API, Next.js, React
+**Stack:** Python, Anthropic API, faster-whisper, ElevenLabs, Telegram Bot API, Next.js, React
 
-**Pipeline**: clap or wake word → local speech-to-text → Claude with tool calling → streaming text-to-speech
+**Flow:** double clap or wake word → local transcription → Claude with tools → streaming voice reply
 
-**Highlights**:
-- **Cost-aware model routing:** Claude Haiku by default, Claude Sonnet on demand
-- **Human in the loop:** outgoing messages are read back and sent only after an explicit "yes", and the confirmation expires after 60 seconds
-- **Background tasks:** longer analyses run while the conversation continues, and the result arrives on Telegram
-- **Long-term memory:** voice, Telegram and web exchanges are saved as local Markdown and searchable by the agent, with no embeddings or cloud memory service
-- **Local dashboard:** Next.js interface with live assistant status and text chat
-- **Multi-agent development:** Claude Code and Codex share project memory through a versioned Obsidian vault, with automatic fallback between them
+- **Conversation:** persistent voice sessions with Claude Haiku by default and Sonnet on demand.
+- **Confirmed actions:** outgoing Telegram messages require explicit confirmation, which expires after 60 seconds.
+- **Background reasoning:** longer tasks run while the conversation continues and deliver their results through Telegram.
+- **Searchable memory:** voice, Telegram and web exchanges are saved locally as Obsidian-compatible Markdown and retrieved without embeddings or a cloud memory service.
+- **Dashboard:** local Next.js interface with assistant status and text chat.
 
-**Next**: email and phone calls, always behind explicit user confirmation.
+**Current scope:** a single-user local assistant. Background tasks have no web, file or command access; email and phone calls remain planned.
 
 ---
 
-### 🤖 DevAssist: CLI AI Agent for Developers
-**Agentic AI** | *Personal Project*
+### ☁️ DevOps Lab: Azure Mission Control
 
-A CLI agent built with Pydantic AI that combines GitHub search, web scraping, local file reading and developer utilities.
+**DevOps · Cloud Infrastructure · CI/CD** | *Personal project*
 
-**Tech Stack**: Pydantic AI, FastMCP, Firecrawl MCP, httpx, Rich, OpenAI, Python 3.12+
+[**Live demo**](https://ca-devops-lab.mangoplant-1a4839a2.northeurope.azurecontainerapps.io) · [**Repository**](https://github.com/matheusIACreator/devops-lab)
 
-**Highlights**:
-- Dual MCP integration: a custom FastMCP server plus Firecrawl for full-page scraping, both managed automatically as stdio subprocesses
-- Async tool calling with dependency injection through `RunContext`
-- Rich CLI with conversation memory and streaming responses
+An end-to-end Azure lab that connects a Next.js application and instrumented APIs to reproducible infrastructure and deployment workflows.
 
----
+**Stack:** Next.js, React, TypeScript, Docker, Terraform, GitHub Actions, Azure Container Apps, Azure Container Registry, Log Analytics, Playwright
 
-### 🔎 Galileu: Production RAG System
-**RAG / LLM Engineering** | *Personal Project*
+- **Infrastructure:** Terraform-managed Azure resources, managed identities and scale-to-zero container hosting.
+- **CI/CD:** lint, type checks, application and Docker builds, container smoke tests and Terraform validation; manual deployments authenticate through OIDC.
+- **Deployment verification:** smoke tests wait for the expected application revision, followed by desktop and mobile Playwright checks.
+- **Observability:** request IDs, server timing and structured JSON logs, with a dashboard showing real API measurements from the browser session.
+- **Operational practice:** load-testing scripts, image-based manual rollback and documented cost and teardown procedures.
 
-A deployed RAG chatbot with hybrid retrieval, measured with standard information retrieval metrics.
-
-**Tech Stack**: LangChain, ChromaDB, BM25, Llama 3.2, FastAPI, Python, Hugging Face Spaces, Vercel
-
-**Results**:
-- **MRR = 1.0, NDCG@8 ≈ 0.91**
-- Hybrid BM25 + dense retrieval over 349 indexed chunks
-- REST API deployed on Hugging Face Spaces, with the front end on Vercel
+**Measurement scope:** dashboard metrics describe the current browser session; they are not Azure-wide monitoring aggregates.
 
 ---
 
-### 🧠 Finance Phi-3: QLoRA Fine-Tuning
-**LLM Fine-Tuning** | *Personal Project*
+### 🔎 Galileu: Hybrid RAG for Historical Q&A
 
-QLoRA fine-tune of Microsoft's Phi-3-mini-4k-instruct on financial Q&A data.
+**RAG · LLM Engineering** | *Personal project*
 
-**Tech Stack**: PyTorch, Hugging Face PEFT, QLoRA, Weights & Biases, Gradio
+[**Live demo**](https://langchain-project-nine.vercel.app/) · [**Repository**](https://github.com/matheusIACreator/Langchain_Project)
 
-**Results**:
-- **ROUGE-L: 0.218 → 0.499 (+129%)**
-- Experiments and training logs tracked in Weights & Biases
-- Gradio demo deployed on Hugging Face Spaces
+A deployed historical Q&A application covering Galileo, Newton and Einstein, with hybrid retrieval, multilingual embeddings and conversational context.
+
+**Stack:** Python, LangChain, ChromaDB, BM25, Llama 3.2 3B, FastAPI, Next.js, Hugging Face Spaces, Vercel
+
+- **Retrieval:** BM25 and dense semantic search combined through Reciprocal Rank Fusion over **349 indexed chunks**.
+- **Evaluation:** **MRR = 1.0** and **NDCG@8 ≈ 0.91** on the project's manually labeled retrieval evaluation set.
+- **Interaction:** topic routing across three knowledge bases and multi-turn conversation memory.
+- **Delivery:** Dockerized FastAPI backend on Hugging Face Spaces and a Next.js frontend on Vercel.
+- **Testing:** coverage of routing, conversation memory, hybrid retrieval and the end-to-end pipeline.
+
+**Evaluation scope:** retrieval metrics describe the labeled query set; they do not measure factual accuracy across all generated answers.
 
 ---
 
-### 🏥 Asthma Severity Classifier
-**Machine Learning** | *Academic Project*
+## 🧪 More Projects
 
-Asthma severity classification using fuzzy logic.
-
-**Tech Stack**: Python, Fuzzy Logic, scikit-learn
+- [**DevAssist**](https://github.com/matheusIACreator/DevAssist) — CLI developer agent with Pydantic AI, asynchronous tool calling, structured outputs and custom + Firecrawl MCP integrations.
+- [**Finance Phi-3 QLoRA**](https://github.com/matheusIACreator/finance-phi3-qlora) — financial Q&A fine-tuning: ROUGE-L **0.218 → 0.499** on the project evaluation, training **0.23%** of parameters.
+- [**Churn Risk Detector**](https://github.com/matheusIACreator/Churn-evaluator) — XGBoost classification with SHAP explanations and a Streamlit interface; reported ROC-AUC **0.8446** and churn recall **82%**.
+- [**JAX RALM**](https://github.com/matheusIACreator/jax-ralm) — experimental retrieval-augmented transformer built with JAX/Flax, FAISS and cross-attention, with a small-scale ablation study.
+- [**Expense Classifier**](https://github.com/matheusIACreator/Expenses-Classifier) — TF-IDF and logistic regression served through FastAPI; weighted F1 **0.83** on synthetic transaction descriptions.
+- [**Asthma Severity Classifier**](https://github.com/matheusIACreator/AsthmaModel) — academic fuzzy-logic application built with Python, scikit-fuzzy and Streamlit.
 
 ---
 
